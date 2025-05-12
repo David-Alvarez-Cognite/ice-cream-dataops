@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bootcamp"
+version = "0.1.0"
+description = "bootcamp test"
+authors = ["David-Alvarez-Cognite <david.alvarez@cognite.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+cognite-toolkit = "0.4.23"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
