@@ -3,9 +3,9 @@ environment:
   project: cdf-bootcamp-75-prod
   validation-type: prod
   selected:
-    - modules/bootcamp/data_foundation
+    #- modules/bootcamp/data_foundation
     - modules/bootcamp/ice_cream_api
-    - modules/bootcamp/use_cases/oee
+    #- modules/bootcamp/use_cases/oee
 
 variables:
   modules:
@@ -22,9 +22,9 @@ variables:
         tokenUri: ${IDP_TOKEN_URL}
         cdfProjectName: ${CDF_PROJECT}
         scopes: ${IDP_SCOPES}
-        icapi_trigger_client_id: ${IDP_CLIENT_ID}
+        icapi_trigger_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
         icapi_trigger_client_secret: ${IDP_CLIENT_SECRET}
-        icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
+        icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
         icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
 
       use_cases:
