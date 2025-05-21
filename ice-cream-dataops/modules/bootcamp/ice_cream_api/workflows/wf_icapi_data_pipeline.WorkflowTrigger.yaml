@@ -1,7 +1,8 @@
 externalId: icapi_trigger
 triggerRule:
   triggerType: schedule
-  cronExpression: '*/15 * * * *'
+  cronExpression: '0 0 1 1 *'
+  #cronExpression: '*/15 * * * *' real one
 workflowExternalId: wf_icapi_data_pipeline
 workflowVersion: '1'
 authentication:
