@@ -1,10 +1,12 @@
 - name: Frontfill every 10 minutes for the last hour of data (streamer)
   functionExternalId: icapi_datapoints_extractor
-  cronExpression: "*/10 * * * *"
+  cronExpression: "0 0 1 1 *"
+  #cronExpression: "*/10 * * * *" real one
   data:
     hours: 1
 - name: Backfill all sites once a day for the last 5 days (gap filling)
   functionExternalId: icapi_datapoints_extractor
-  cronExpression: "15 0 * * *"
+  cronExpression: "0 0 1 1 *"
+  #cronExpression: "15 0 * * *" real one
   data:
     backfill: True
